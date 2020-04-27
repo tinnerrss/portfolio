@@ -62,6 +62,10 @@ li a:hover {
      border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
 }
 
+.nav .dropdown {
+  display: none;
+}
+
 .nav .logo {
   height: 95%;
   padding-left: 20px;
@@ -406,141 +410,6 @@ li a:hover {
   height: 85%;
 }
 
-#projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  width: 100%;
-}
-
-#projects .projboxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 95%;
-  width: 98%;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#projects .projboxes .projwrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 50%;
-  width: 49%;
-  border: 1px solid black;
-}
-
-#projects .projboxes .projwrapper .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 80%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-#projects .projboxes .projwrapper .links a {
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-}
-
-#projects .projboxes .projwrapper .links a:hover {
-  border-top: 2px solid #D4B1B1;
-}
-
-#projects .projboxes .projwrapper .projectwrapper {
-  height: 370px;
-  width: 600px;
-  border: 3px solid;
-  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-  margin: 20px;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#projects .projboxes .projwrapper .projectwrapper .projtext {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 370px;
-  width: 600px;
-  position: absolute;
-  z-index: 12;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.541);
-  color: white;
-}
-
-#projects .projboxes .projwrapper .projectwrapper .projtext:hover {
-  opacity: 1;
-}
-
-#projects .projboxes .projwrapper .projectwrapper .projimg {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 0;
-}
-
 #projects2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,14 +424,14 @@ li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 90vh;
+  height: 150vh;
   width: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-#projects2 .projboxes {
+#projects2 .projwrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,40 +445,14 @@ li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 95%;
-  width: 98%;
-  overflow: scroll;
+  height: 33%;
+  width: 97.5%;
+  margin: 15px 0px;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#projects2 .projboxes .projwrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 50%;
-  width: 100%;
-  margin: 30px;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#projects2 .projboxes .projwrapper .deets {
+#projects2 .projwrapper .deets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,22 +471,36 @@ li a:hover {
           justify-content: space-between;
   width: 55%;
   height: 80%;
+  border: white;
 }
 
-#projects2 .projboxes .projwrapper .deets .projtext {
+#projects2 .projwrapper .deets .projtext {
   height: 50%;
   width: 80%;
 }
 
-#projects2 .projboxes .projwrapper .deets .projtext h1 {
+#projects2 .projwrapper .deets .projtext h1 {
   margin-bottom: 20px;
 }
 
-#projects2 .projboxes .projwrapper .deets i {
-  color: pink;
+#projects2 .projwrapper .deets .projtext .skills {
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  color: #b18989;
 }
 
-#projects2 .projboxes .projwrapper .deets .links {
+#projects2 .projwrapper .deets .projtext p {
+  margin-top: 10px;
+}
+
+#projects2 .projwrapper .deets i {
+  color: #636363;
+}
+
+#projects2 .projwrapper .deets .livelinks {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,102 +514,66 @@ li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 80%;
-  height: 20%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#projects2 .projwrapper .deets .livelinks a {
   font-weight: bold;
-}
-
-#projects2 .projboxes .projwrapper .deets .links a {
-  border: 1px solid transparent;
-  border: 1px solid black;
-  text-decoration: none;
   color: black;
-  padding: 2% 19%;
+  border: 1px solid black;
+  width: 45%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
 }
 
-#projects2 .projboxes .projwrapper .deets .links a:hover {
+#projects2 .projwrapper .deets .livelinks a:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
           box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
 }
 
-#projects2 .projboxes .projwrapper .vanity {
+#projects2 .projwrapper .vanity, #projects2 .projwrapper .closet, #projects2 .projwrapper .eatvite {
   height: 80%;
   width: 40%;
   border: 5px solid;
   -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
      border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
   margin: 20px;
-  background-image: url("/vanity.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-#projects2 .projboxes .projwrapper .vanity:hover {
+#projects2 .projwrapper .vanity {
+  background-image: url("/vanity.png");
+}
+
+#projects2 .projwrapper .vanity:hover {
   background-image: url("https://media.giphy.com/media/J39apWTkTN9FAVgy4C/giphy.gif");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-#projects2 .projboxes .projwrapper .closet {
-  height: 80%;
-  width: 40%;
-  border: 5px solid;
-  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-  margin: 20px;
+#projects2 .projwrapper .closet {
   background-image: url("/closet.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-#projects2 .projboxes .projwrapper .closet:hover {
+#projects2 .projwrapper .closet:hover {
   background-image: url("https://media.giphy.com/media/YRW7XC7Ao6bfLVMF6H/giphy.gif");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-#projects2 .projboxes .projwrapper .eatvite {
-  height: 80%;
-  width: 40%;
-  border: 5px solid;
-  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-  margin: 20px;
+#projects2 .projwrapper .eatvite {
   background-image: url("/eatvite2.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-#projects2 .projboxes .projwrapper .eatvite:hover {
+#projects2 .projwrapper .eatvite:hover {
   background-image: url("https://media.giphy.com/media/j0Aaxfj8jK6dVROK6V/giphy.gif");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#projects2 .projboxes .projwrapper .tinlash {
-  height: 80%;
-  width: 40%;
-  border: 5px solid;
-  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-  margin: 20px;
-  background-image: url("/tinlash.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#projects2 .projboxes .projwrapper .tinlash:hover {
-  background-image: url("https://media.giphy.com/media/H3HcQ5z3aw1M1QCUcn/giphy.gif");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -839,7 +660,13 @@ li a:hover {
   height: 80%;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1350px) {
+  .landing {
+    background-image: url("/smallpic.png");
+  }
+}
+
+@media screen and (max-width: 1250px) {
   #about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -904,77 +731,49 @@ li a:hover {
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #connect {
-    height: 100vh;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    background-image: url("/fishcode.png");
-    background-position: center;
-    background-size: cover;
   }
   #connect .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    border: 5px solid;
-    -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-       border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 50%;
     width: 80%;
   }
   #connect .card .deetbox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     padding: 0px 20px;
     width: 60%;
     height: 20%;
-    background-color: rgba(255, 255, 255, 0.795);
-    border-radius: 5px;
-    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #connect .card .deetbox .icons {
-    height: 80%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .nav .links {
+    display: none;
+  }
+  .nav .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: 0;
+  }
+  .nav .dropdown .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .nav .dropdown .menuicon {
+    width: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -1001,7 +800,7 @@ li a:hover {
             justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: -1px;
     z-index: 10;
     border-bottom: 2px  solid;
     -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
@@ -1035,6 +834,15 @@ li a:hover {
   #about {
     height: 100%;
   }
+  #about .me {
+    height: 700px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #about .me .mecontent {
+    height: 40%;
+  }
   #about .me .imgbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1059,10 +867,81 @@ li a:hover {
     -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
        border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
   }
+  #about .me .modal-window {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #about .me .modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #about .me .modal-window > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+  }
+  #about .me .modal-window > div .resumepic {
+    height: 400px;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #about .me .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+  }
+  #about .me .modal-close:hover {
+    color: black;
+  }
+  #about .skills {
+    height: 400px;
+  }
+  #about .skills .skillboxes .skillList0 .skillcolumns {
+    border: none;
+  }
   #projects2 {
     height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #projects2 .projboxes {
+  #projects2 .projwrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1072,22 +951,17 @@ li a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 95%;
-    width: 98%;
-    overflow: scroll;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    margin: 15px 0px;
     -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  #projects2 .projboxes .projwrapper {
+  #projects2 .projwrapper .deets {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1097,102 +971,37 @@ li a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 85%;
+    height: 60%;
+  }
+  #projects2 .projwrapper .deets .projtext {
     height: 50%;
     width: 100%;
-    margin: 30px;
-    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  #projects2 .projboxes .projwrapper .deets {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 55%;
-    height: 80%;
+  #projects2 .projwrapper .deets .projtext h1 {
+    margin-bottom: 5px;
   }
-  #projects2 .projboxes .projwrapper .deets .projtext {
-    height: 50%;
-    width: 80%;
-  }
-  #projects2 .projboxes .projwrapper .deets .projtext h1 {
-    margin-bottom: 0px;
-  }
-  #projects2 .projboxes .projwrapper .deets i {
-    color: pink;
-  }
-  #projects2 .projboxes .projwrapper .deets .links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 80%;
-    height: 20%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  #projects2 .projwrapper .deets .livelinks a {
     font-weight: bold;
-  }
-  #projects2 .projboxes .projwrapper .deets .links a {
-    border: 1px solid transparent;
-    border: 1px solid black;
-    text-decoration: none;
     color: black;
-    padding: 2% 19%;
+    border: 1px solid black;
+    width: 45%;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
   }
-  #projects2 .projboxes .projwrapper .deets .links a:hover {
-    -webkit-box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
-            box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
-  }
-  #projects2 .projboxes .projwrapper .vanity, #projects2 .projboxes .projwrapper .closet, #projects2 .projboxes .projwrapper .eatvite, #projects2 .projboxes .projwrapper .tinlash {
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  #projects2 .projboxes {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #projects2 .projboxes .projwrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #projects2 .projboxes .projwrapper .deets {
-    width: 90%;
-  }
-  #projects2 .projboxes .projwrapper .vanity, #projects2 .projboxes .projwrapper .closet, #projects2 .projboxes .projwrapper .eatvite, #projects2 .projboxes .projwrapper .tinlash {
-    height: 150px;
+  #projects2 .projwrapper .vanity, #projects2 .projwrapper .closet, #projects2 .projwrapper .eatvite, #projects2 .projwrapper .tinlash {
+    height: 30%;
     width: 80%;
+    margin: 15px;
   }
   #connect .card {
     width: 90%;

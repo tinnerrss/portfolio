@@ -51,6 +51,9 @@ li {
     z-index: 10;
     border-bottom: 2px  solid;
     border-image: $gold;
+    .dropdown {
+        display: none;
+    }
     .logo {
         height: 95%;
         padding-left: 20px;
@@ -212,91 +215,25 @@ li {
     }
 }
 
-#projects {
-    @include flexCenter(column);
-    @include fullPage();
-
-    .projboxes {
-        @include flexCenter(row);
-        flex-wrap: wrap;
-        height: 95%;
-        width: 98%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        .projwrapper {
-            @include flexCenter(column);
-            height: 50%;
-            width: 49%;
-            border: $test;
-            .links {
-                @include flexCenter(row);
-                width: 80%;
-                justify-content: space-evenly;
-                a {
-                    text-decoration: none;
-                    color: black;
-                    padding: 10px;
-                }
-                a:hover {
-                    border-top: 2px solid $mauve;
-                }
-            }
-            .projectwrapper {
-                height: 370px;
-                width: 600px;
-                border: 3px solid;
-                border-image: $gold;
-                margin: 20px;
-                box-shadow: $shadow;
-                .projtext {
-                    @include flexCenter(column);
-                    height: 370px;
-                    width: 600px;
-                    position: absolute;
-                    z-index: 12;
-                    opacity: 0;
-                    background-color: rgba(0, 0, 0, 0.541);
-                    color: white;
-                    // border: $test;
-                }
-                .projtext:hover {
-                        opacity: 1;
-                    }
-                    .projimg {
-                        @include fit();
-                        object-fit: cover;
-                        z-index: 0;
-                        // position: relative;
-                    }
-            }
-        }
-        
-    }
-}
 #projects2 {
     @include flexCenter(column);
-    height: 90vh;
+    height: 150vh;
     width: 100%;
     justify-content: space-evenly;
-    .projboxes {
-        @include flexCenter(row);
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        height: 95%;
-        width: 98%;
-        overflow: scroll;
-        box-shadow: $shadow;
+    
         
         .projwrapper {
             @include flexCenter(row);
-            height: 50%;
-            width: 100%;
-            margin: 30px;
+            height: 33%;
+            width: 97.5%;
+            margin: 15px 0px;
             box-shadow: $shadow;
             .deets {
                 @include flexCenter(column);
                 justify-content: space-between ;
                 width: 55%;
                 height: 80%;
+                border: white;
                
                 .projtext {
                    
@@ -306,40 +243,49 @@ li {
                     h1 {
                         margin-bottom: 20px;
                     }
+                    .skills {
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid;
+                        border-image: $gold;
+                        color: $darkmauve
+                    }
+                    p {
+                        margin-top: 10px;
+                    }
                 }
                 i {
-                    color: pink;
+                    color: rgb(99, 99, 99);
                 }
-
-                .links {
-                    @include flexCenter(row);
+                .livelinks {
                     width: 80%;
-                    height: 20%;
+                    @include flexCenter(row);
                     justify-content: space-between;
-                    font-weight: bold;
-                    a { 
-                        border: 1px solid transparent;
-                        border:$test;
-                        text-decoration: none;
+                    a {
+                        font-weight: bold;
                         color: black;
-                        padding: 2% 19%;
+                        border: $test;
+                        width: 45%;
+                        padding: 10px;
+                        text-align: center;
+                        text-decoration: none;
                     }
                     a:hover {
                         box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
                     }
                 }
             }
-            .vanity {
+            .vanity, .closet, .eatvite {
                 height: 80%;
                 width: 40%;
                 border: 5px solid;
                 border-image: $gold;
                 margin: 20px;
-                // box-shadow: $shadow;
-                background-image: url("/vanity.png");
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
+            }
+            .vanity {
+                background-image: url("/vanity.png");
             }
             .vanity:hover {
                 background-image: url("https://media.giphy.com/media/J39apWTkTN9FAVgy4C/giphy.gif");
@@ -348,16 +294,7 @@ li {
                 background-repeat: no-repeat;
             }
             .closet {
-                height: 80%;
-                width: 40%;
-                border: 5px solid;
-                border-image: $gold;
-                margin: 20px;
-                // box-shadow: $shadow;
                 background-image: url("/closet.png");
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
             }
             .closet:hover {
                 background-image: url("https://media.giphy.com/media/YRW7XC7Ao6bfLVMF6H/giphy.gif");
@@ -366,16 +303,9 @@ li {
                 background-repeat: no-repeat;
             }
             .eatvite {
-                height: 80%;
-                width: 40%;
-                border: 5px solid;
-                border-image: $gold;
-                margin: 20px;
-                // box-shadow: $shadow;
+
                 background-image: url("/eatvite2.png");
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
+
             }
             .eatvite:hover {
                 background-image: url("https://media.giphy.com/media/j0Aaxfj8jK6dVROK6V/giphy.gif");
@@ -383,27 +313,7 @@ li {
                 background-size: contain;
                 background-repeat: no-repeat;
             }
-            .tinlash {
-                height: 80%;
-                width: 40%;
-                border: 5px solid;
-                border-image: $gold;
-                margin: 20px;
-                // box-shadow: $shadow;
-                background-image: url("/tinlash.png");
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-            .tinlash:hover {
-                background-image: url("https://media.giphy.com/media/H3HcQ5z3aw1M1QCUcn/giphy.gif");
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
         }
-        
-    }
 }
 #connect {
     @include fullPage();
@@ -438,7 +348,12 @@ li {
     }
 
 }
-@media screen and (max-width: 1020px) { 
+@media screen and (max-width: 1350px) {
+    .landing {
+        background-image: url("/smallpic.png");
+    }
+}
+@media screen and (max-width: 1250px) { 
     #about {
         @include flexCenter(column);
         @include fullPage();
@@ -463,32 +378,16 @@ li {
         }
     }
     #connect {
-        @include fullPage();
-        @include flexCenter(row);
-        // justify-content: flex-start;
-        background-image: url("/fishcode.png");
-        background-position: center;
-        background-size: cover;
+        justify-content: center;
         .card {
-            @include flexCenter(column);
-            justify-content: space-evenly;
-            border: 5px solid;
-            border-image: $gold;
-            box-shadow: $shadow;
             height: 50%;
             width: 80%;
-            // margin: 0px 5%;
             .deetbox {
-                @include flexCenter(row);
-                justify-content: space-between;
                 padding: 0px 20px;
                 width: 60%;
                 height: 20%;
-                background-color: rgba(255, 255, 255, 0.795);
-                border-radius: 5px;
-                box-shadow: $shadow;
                 .icons {
-                    height: 80%;
+                    height: 60%;
                 }
             }
            
@@ -497,7 +396,38 @@ li {
     }
 
 }
-  
+
+@media screen and (max-width: 870px) {
+    .nav {
+        .links {
+            display: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px 16px;
+                z-index: 1;
+                right: 0;
+              }
+              .dropdown:hover .dropdown-content {
+                display: block;
+              }
+              .menuicon {
+                width: 20px;
+                margin-right: 20px;
+              }
+        }
+          
+          
+    }
+}
+ 
 @media screen and (max-width: 600px) { 
     .nav {
         @include flexCenter(row);
@@ -506,7 +436,7 @@ li {
         width: 100%;
         justify-content: space-between;
         position: sticky;
-        top: 0px;
+        top: -1px;
         z-index: 10;
         border-bottom: 2px  solid;
         border-image: $gold;
@@ -525,6 +455,12 @@ li {
     #about {
         height: 100%;
         .me {
+            height: 700px;
+            justify-content: space-between;
+            .mecontent {
+                // border: $test;
+                height: 40%;
+            }
             .imgbox {
                 @include flexCenter(row);
                 height: 50%;
@@ -536,85 +472,110 @@ li {
                     // box-shadow: $shadow;
                 }
             }
+            .modal-window {
+                position: fixed;
+                background: rgba(0, 0, 0, 0.7);
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 999;
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.3s;
+                &:target {
+                  visibility: visible;
+                  opacity: 1;
+                  pointer-events: auto;
+                }
+                &>div {
+                    @include flexCenter(column);
+                  width: 85%;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  padding: 2em;
+                  background: #ffffff;
+                  .resumepic {
+                      height: 400px;
+                      box-shadow: $shadow;  
+                  }
+                }
+               
+              }
+              
+              .modal-close {
+                color: #aaa;
+                line-height: 50px;
+                font-size: 80%;
+                position: absolute;
+                right: 0;
+                text-align: center;
+                top: 0;
+                width: 70px;
+                text-decoration: none;
+                &:hover {
+                  color: black;
+                }
+              }
+        }
+        .skills {
+            height: 400px;
+            .skillboxes {
+                .skillList0 {
+                    .skillcolumns {
+                        border: none;
+                    }
+                }
+            }
         }
     }
     #projects2 {
         height:100%;
-        .projboxes {
-        @include flexCenter(row);
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        height: 95%;
-        width: 98%;
-        overflow: scroll;
-        box-shadow: $shadow;
-        
+        flex-direction: column;
         .projwrapper {
-            @include flexCenter(row);
-            height: 50%;
+            @include flexCenter(column);
+            height: 500px;
             width: 100%;
-            margin: 30px;
+            margin: 15px 0px;
             box-shadow: $shadow;
             .deets {
                 @include flexCenter(column);
-                justify-content: space-between ;
-                width: 55%;
-                height: 80%;
-               
+                justify-content: space-between;
+                width: 85%;
+                height: 60%;
                 .projtext {
-                   
                     height: 50%;
-                    width: 80%;
+                    width: 100%;
                     // text-align: center;
                     h1 {
-                        margin-bottom: 0px;
+                        margin-bottom: 5px;
                     }
                 }
-                i {
-                    color: pink;
-                }
-
-                .links {
-                    @include flexCenter(row);
-                    width: 80%;
-                    height: 20%;
-                    justify-content: space-between;
-                    font-weight: bold;
-                    a { 
-                        border: 1px solid transparent;
-                        border:$test;
-                        text-decoration: none;
+                .livelinks {
+                    a {
+                        font-weight: bold;
                         color: black;
-                        padding: 2% 19%;
-                    }
-                    a:hover {
-                        box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
+                        border: $test;
+                        width: 45%;
+                        padding: 5px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        text-decoration: none;
                     }
                 }
                 
             }
             .vanity, .closet, .eatvite, .tinlash {
-                height: 200px;
+                height: 30%;
+                width: 80%;
+                margin: 15px;
             }
         }
-    }   
-    }
-}
-@media screen and (max-width: 414px) {
-    #projects2 {
-        .projboxes {
-            flex-direction: column;
-            .projwrapper {
-                flex-direction: column;
-                .deets {
-                    width: 90%;
-                }
-                .vanity, .closet, .eatvite, .tinlash {
-                    height: 150px;
-                    width:80%;
-                }
-            }
-        }
+
+      
     }
     #connect {
         .card {
@@ -627,4 +588,4 @@ li {
             }
         }
     }
- }
+}

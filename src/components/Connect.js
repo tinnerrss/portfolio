@@ -6,19 +6,19 @@ function Connect() {
             <div className="card">
                 <div className="deetbox">
                     <img src="/phone.png" className="icons"/>
-                    <h3> (206) 849-9836</h3>
+                    <p> (206) 849-9836</p>
                 </div>
                 <div className="deetbox">
                     <img src="/email.png" className="icons"/>
-                    <h3>tinthinhhoang@gmail.com</h3>
+                    <p>tinthinhhoang@gmail.com</p>
                 </div>
                 <div className="deetbox">
                     <img src="/linkedin.png" className="icons"/>
-                    <h3>linkedin.com/in/thinhthoang</h3>
+                    <p>linkedin.com/in/thinhthoang</p>
                 </div>
                 <div className="deetbox">
                     <img src="/github.png" className="icons"/>
-                    <h3>github.com/tinnerrss</h3>
+                    <p>github.com/tinnerrss</p>
                 </div>
             </div>
         </div>

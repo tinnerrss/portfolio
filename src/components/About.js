@@ -22,7 +22,7 @@ function About() {
                 </div> 
                 <div id="open-modal" className="modal-window">
                     <div>
-                        <a href="#about" title="Close" class="modal-close">Close</a>
+                        <a href="#about" title="Close" className="modal-close">Close</a>
                         <a href="../assets/Resume.pdf" target="noopener">Click Here For PDF</a>
                         <img src="/prettyresume.png" className="resumepic"/>
                     </div>
@@ -80,7 +80,6 @@ function About() {
                             Express
                         </li>
                         <li>
-                            PostgresSQL  
                         </li>
                         <li>
                             MongoDB
