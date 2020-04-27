@@ -14,11 +14,11 @@ function Connect() {
                 </div>
                 <div className="deetbox">
                     <img src="/linkedin.png" className="icons"/>
-                    <h3>https://www.linkedin.com/in/thinhthoang/</h3>
+                    <h3>linkedin.com/in/thinhthoang</h3>
                 </div>
                 <div className="deetbox">
                     <img src="/github.png" className="icons"/>
-                    <h3>https://github.com/tinnerrss</h3>
+                    <h3>github.com/tinnerrss</h3>
                 </div>
             </div>
         </div>

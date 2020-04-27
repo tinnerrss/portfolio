@@ -11,13 +11,13 @@ function Nav() {
                     <a href="#about">ABOUT ME </a>
                 </li> 
                 <li>
-                    <a href="#projects">PROJECTS</a>
+                    <a href="#projects2">PROJECTS</a>
                 </li> 
                 <li>
                     <a href="#resume">RESUME</a>
                 </li>
                 <li>
-                    <a href="#contact">GET IN TOUCH</a>
+                    <a href="#connect">GET IN TOUCH</a>
                 </li>
             </div>
         </div>

@@ -15,7 +15,7 @@ function About() {
                     </p>
                 </div>
                 <div className="icons">
-                    <a href=""><img src="/email.png" className="contacticons"/></a>
+                    <a href="mailto:tinthinhhoang@gmail.com"><img src="/email.png" className="contacticons"/></a>
                     <a href="https://www.linkedin.com/in/thinhthoang/" target="_blank"><img src="/linkedin.png" className="contacticons"/></a>
                     <a href="https://github.com/tinnerrss" target="_blank"><img src="/github.png" className="contacticons"/></a>
                     <a href="#open-modal"><img src="/resume.png" className="contacticons"/></a>
@@ -25,9 +25,10 @@ function About() {
                         <a href="#about" title="Close" class="modal-close">Close</a>
                         <a href="../assets/Resume.pdf" target="noopener">Click Here For PDF</a>
                         <img src="/prettyresume.png" className="resumepic"/>
-                        </div>
                     </div>
                 </div>
+            </div>
+            
             <div className="skills">
                 <div className="skillboxes">
                     <div className="skillhead">

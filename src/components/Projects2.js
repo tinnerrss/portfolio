@@ -12,7 +12,10 @@ function Projects2() {
                                 <h1>Vanity</h1>
                                 <p className="skills">Javascript | CSS | Express | EJS | PostgreSQL </p>
                                 <p>A web app that calls to a makeup API that allows users to search through makeup, save it to their profile, and directs them to the purchasing site when they're ready to buy a product.</p>
+                            </div>
+                            <div>
                                 <i>(Hover Over Image)</i>
+
                             </div>
                             <div className="links">
                                 <a href="https://github.com/tinnerrss/vanity">GITHUB</a><a href="https://vanity-express-29.herokuapp.com/">WEBSITE</a>
@@ -27,7 +30,10 @@ function Projects2() {
                                 <h1>Closet</h1>
                                 <p className="skills">Python | CSS | React | Cloudinary </p>
                                 <p>What’s more frustrating than wanting to go eat with your friends but no one can decide on where to eat? Imagine being able to send an “EatVite” to your friends and never having to wonder where to eat again.</p>
+                            </div>
+                            <div>
                                 <i>(Hover Over Image)</i>
+
                             </div>
                             <div className="links">
                                 <a href="https://github.com/tinnerrss/closet">GITHUB</a>
@@ -42,7 +48,10 @@ function Projects2() {
                                 <h1>EatVite</h1>
                                 <p className="skills">Javascript | CSS | React | MongoDB </p>
                                 <p>App allowing users to upload photos of items in their closet so they can know what’s clean and readily available and what’s not, taking away that extra hassle of deciding what to wear in the morning.</p>
+                            </div>
+                            <div>
                                 <i>(Hover Over Image)</i>
+
                             </div>
                             <div className="links">
                                 <a href="https://github.com/tinnerrss/eatvite">GITHUB</a><a href="https://eatvite.herokuapp.com/">WEBSITE</a>
@@ -57,6 +66,8 @@ function Projects2() {
                                 <h1>TIN & LASH</h1>
                                 <p>Javascript | CSS | MindBody </p>
                                 <p className="skills">Appointment booking web app that allows clients to check prices, see availability, and schedule appointments through MindBody.</p>
+                            </div>
+                            <div>
                                 <i>(Hover Over Image)</i>
                             </div>
                             <div className="links">

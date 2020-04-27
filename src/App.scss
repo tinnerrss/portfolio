@@ -6,7 +6,7 @@ $darkmauve:  #b18989;
 
 
 @mixin fullPage() {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 @mixin flexCenter($direction) {
@@ -65,7 +65,7 @@ li {
 
 .landing {
     @include fullPage();
-    background-image: url("/background.png");
+    background-image: url("/temp.png");
     background-position: center;
     background-size: cover;
 }
@@ -294,34 +294,35 @@ li {
             box-shadow: $shadow;
             .deets {
                 @include flexCenter(column);
+                justify-content: space-between ;
                 width: 55%;
                 height: 80%;
-                padding: 10px;
-                // border: $test;
+               
                 .projtext {
-                    // border: $test;
+                   
                     height: 50%;
                     width: 80%;
                     // text-align: center;
-                    i {
-                        color: pink;
-                    }
                     h1 {
-                        margin: 20px 0px;
+                        margin-bottom: 20px;
                     }
                 }
+                i {
+                    color: pink;
+                }
+
                 .links {
                     @include flexCenter(row);
                     width: 80%;
-                    height: 30%;
+                    height: 20%;
                     justify-content: space-between;
                     font-weight: bold;
-                    // border: $test;
                     a { 
+                        border: 1px solid transparent;
                         border:$test;
                         text-decoration: none;
                         color: black;
-                        padding: 10px 19%;
+                        padding: 2% 19%;
                     }
                     a:hover {
                         box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
@@ -437,10 +438,193 @@ li {
     }
 
 }
-@media screen and (max-width: 1140px) { 
+@media screen and (max-width: 1020px) { 
+    #about {
+        @include flexCenter(column);
+        @include fullPage();
+        .me{
+            @include flexCenter(column);
+            justify-content: space-evenly;
+            height: 90%;
+            width: 100%;
+            // border: $test;
+            box-shadow: $shadow;
+            margin: 20px;
+            
+        }
+        .skills {
+            @include flexCenter(column);
+            justify-content: space-evenly;
+            height: 90%;
+            width: 100%;
+            margin: 20px;
+            box-shadow: $shadow;
+            
+        }
+    }
+    #connect {
+        @include fullPage();
+        @include flexCenter(row);
+        // justify-content: flex-start;
+        background-image: url("/fishcode.png");
+        background-position: center;
+        background-size: cover;
+        .card {
+            @include flexCenter(column);
+            justify-content: space-evenly;
+            border: 5px solid;
+            border-image: $gold;
+            box-shadow: $shadow;
+            height: 50%;
+            width: 80%;
+            // margin: 0px 5%;
+            .deetbox {
+                @include flexCenter(row);
+                justify-content: space-between;
+                padding: 0px 20px;
+                width: 60%;
+                height: 20%;
+                background-color: rgba(255, 255, 255, 0.795);
+                border-radius: 5px;
+                box-shadow: $shadow;
+                .icons {
+                    height: 80%;
+                }
+            }
+           
+        }
     
-  }
-  
-  @media screen and (max-width: 600px) { 
+    }
 
-  }
+}
+  
+@media screen and (max-width: 600px) { 
+    .nav {
+        @include flexCenter(row);
+        background-color: white;
+        height: 6vh;
+        width: 100%;
+        justify-content: space-between;
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+        border-bottom: 2px  solid;
+        border-image: $gold;
+        .logo {
+            height: 95%;
+            padding-left: 20px;
+        }
+        .links {
+            width: 50%;
+            @include flexCenter(row);
+            justify-content: space-evenly;
+            font-weight: bold;
+            display: none;
+        }
+    }
+    #about {
+        height: 100%;
+        .me {
+            .imgbox {
+                @include flexCenter(row);
+                height: 50%;
+                .mepic {
+                    object-fit: cover;
+                    height: 200px;
+                    border: 5px solid transparent;
+                    border-image: $gold;
+                    // box-shadow: $shadow;
+                }
+            }
+        }
+    }
+    #projects2 {
+        height:100%;
+        .projboxes {
+        @include flexCenter(row);
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 95%;
+        width: 98%;
+        overflow: scroll;
+        box-shadow: $shadow;
+        
+        .projwrapper {
+            @include flexCenter(row);
+            height: 50%;
+            width: 100%;
+            margin: 30px;
+            box-shadow: $shadow;
+            .deets {
+                @include flexCenter(column);
+                justify-content: space-between ;
+                width: 55%;
+                height: 80%;
+               
+                .projtext {
+                   
+                    height: 50%;
+                    width: 80%;
+                    // text-align: center;
+                    h1 {
+                        margin-bottom: 0px;
+                    }
+                }
+                i {
+                    color: pink;
+                }
+
+                .links {
+                    @include flexCenter(row);
+                    width: 80%;
+                    height: 20%;
+                    justify-content: space-between;
+                    font-weight: bold;
+                    a { 
+                        border: 1px solid transparent;
+                        border:$test;
+                        text-decoration: none;
+                        color: black;
+                        padding: 2% 19%;
+                    }
+                    a:hover {
+                        box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
+                    }
+                }
+                
+            }
+            .vanity, .closet, .eatvite, .tinlash {
+                height: 200px;
+            }
+        }
+    }   
+    }
+}
+@media screen and (max-width: 414px) {
+    #projects2 {
+        .projboxes {
+            flex-direction: column;
+            .projwrapper {
+                flex-direction: column;
+                .deets {
+                    width: 90%;
+                }
+                .vanity, .closet, .eatvite, .tinlash {
+                    height: 150px;
+                    width:80%;
+                }
+            }
+        }
+    }
+    #connect {
+        .card {
+            width: 90%;
+            .deetbox {
+                width: 80%;
+                .icons {
+                    height: 50%;
+                }
+            }
+        }
+    }
+ }

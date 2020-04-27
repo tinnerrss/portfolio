@@ -89,9 +89,9 @@ li a:hover {
 }
 
 .landing {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
-  background-image: url("/background.png");
+  background-image: url("/temp.png");
   background-position: center;
   background-size: cover;
 }
@@ -110,7 +110,7 @@ li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -420,7 +420,7 @@ li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -623,9 +623,11 @@ li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 55%;
   height: 80%;
-  padding: 10px;
 }
 
 #projects2 .projboxes .projwrapper .deets .projtext {
@@ -633,12 +635,12 @@ li a:hover {
   width: 80%;
 }
 
-#projects2 .projboxes .projwrapper .deets .projtext i {
-  color: pink;
+#projects2 .projboxes .projwrapper .deets .projtext h1 {
+  margin-bottom: 20px;
 }
 
-#projects2 .projboxes .projwrapper .deets .projtext h1 {
-  margin: 20px 0px;
+#projects2 .projboxes .projwrapper .deets i {
+  color: pink;
 }
 
 #projects2 .projboxes .projwrapper .deets .links {
@@ -656,7 +658,7 @@ li a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 80%;
-  height: 30%;
+  height: 20%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -664,10 +666,11 @@ li a:hover {
 }
 
 #projects2 .projboxes .projwrapper .deets .links a {
+  border: 1px solid transparent;
   border: 1px solid black;
   text-decoration: none;
   color: black;
-  padding: 10px 19%;
+  padding: 2% 19%;
 }
 
 #projects2 .projboxes .projwrapper .deets .links a:hover {
@@ -756,7 +759,7 @@ li a:hover {
 }
 
 #connect {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,5 +837,371 @@ li a:hover {
 
 #connect .card .deetbox .icons {
   height: 80%;
+}
+
+@media screen and (max-width: 1020px) {
+  #about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  #about .me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 90%;
+    width: 100%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
+  }
+  #about .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 90%;
+    width: 100%;
+    margin: 20px;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #connect {
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-image: url("/fishcode.png");
+    background-position: center;
+    background-size: cover;
+  }
+  #connect .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    border: 5px solid;
+    -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+       border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 50%;
+    width: 80%;
+  }
+  #connect .card .deetbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 20px;
+    width: 60%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #connect .card .deetbox .icons {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: white;
+    height: 6vh;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    border-bottom: 2px  solid;
+    -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+       border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  }
+  .nav .logo {
+    height: 95%;
+    padding-left: 20px;
+  }
+  .nav .links {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-weight: bold;
+    display: none;
+  }
+  #about {
+    height: 100%;
+  }
+  #about .me .imgbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 50%;
+  }
+  #about .me .imgbox .mepic {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 200px;
+    border: 5px solid transparent;
+    -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+       border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  }
+  #projects2 {
+    height: 100%;
+  }
+  #projects2 .projboxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 95%;
+    width: 98%;
+    overflow: scroll;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #projects2 .projboxes .projwrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 50%;
+    width: 100%;
+    margin: 30px;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #projects2 .projboxes .projwrapper .deets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 55%;
+    height: 80%;
+  }
+  #projects2 .projboxes .projwrapper .deets .projtext {
+    height: 50%;
+    width: 80%;
+  }
+  #projects2 .projboxes .projwrapper .deets .projtext h1 {
+    margin-bottom: 0px;
+  }
+  #projects2 .projboxes .projwrapper .deets i {
+    color: pink;
+  }
+  #projects2 .projboxes .projwrapper .deets .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    height: 20%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-weight: bold;
+  }
+  #projects2 .projboxes .projwrapper .deets .links a {
+    border: 1px solid transparent;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 2% 19%;
+  }
+  #projects2 .projboxes .projwrapper .deets .links a:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
+            box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
+  }
+  #projects2 .projboxes .projwrapper .vanity, #projects2 .projboxes .projwrapper .closet, #projects2 .projboxes .projwrapper .eatvite, #projects2 .projboxes .projwrapper .tinlash {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #projects2 .projboxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #projects2 .projboxes .projwrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #projects2 .projboxes .projwrapper .deets {
+    width: 90%;
+  }
+  #projects2 .projboxes .projwrapper .vanity, #projects2 .projboxes .projwrapper .closet, #projects2 .projboxes .projwrapper .eatvite, #projects2 .projboxes .projwrapper .tinlash {
+    height: 150px;
+    width: 80%;
+  }
+  #connect .card {
+    width: 90%;
+  }
+  #connect .card .deetbox {
+    width: 80%;
+  }
+  #connect .card .deetbox .icons {
+    height: 50%;
+  }
 }
 /*# sourceMappingURL=App.css.map */
