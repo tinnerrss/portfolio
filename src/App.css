@@ -48,7 +48,7 @@ li a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: white;
-  height: 10vh;
+  height: 6vh;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -85,6 +85,7 @@ li a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  font-weight: bold;
 }
 
 .landing {
@@ -161,9 +162,9 @@ li a:hover {
 #about .me .mecontent .head {
   -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
      border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-  border-bottom: 5px solid;
+  border-bottom: 2px solid;
   margin-bottom: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   color: #b18989;
 }
 
@@ -191,8 +192,6 @@ li a:hover {
   border: 5px solid transparent;
   -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
      border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #about .me .icons {
@@ -317,8 +316,6 @@ li a:hover {
   border: 5px solid;
   -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
      border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #about .skills .skillboxes .skillhead {
@@ -337,11 +334,10 @@ li a:hover {
           flex-direction: column;
   width: 100%;
   height: 15%;
-  background-color: #b18989;
+  background: -webkit-gradient(linear, right top, left top, from(#b18989), to(#dbc7c7));
+  background: linear-gradient(to left, #b18989, #dbc7c7);
   margin: 0px;
   color: white;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #about .skills .skillboxes .skillList0 {
@@ -445,7 +441,7 @@ li a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 95%;
-  width: 75%;
+  width: 98%;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -464,6 +460,9 @@ li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 50%;
+  width: 49%;
+  border: 1px solid black;
 }
 
 #projects .projboxes .projwrapper .links {
@@ -542,6 +541,220 @@ li a:hover {
   z-index: 0;
 }
 
+#projects2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projects2 .projboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 95%;
+  width: 98%;
+  overflow: scroll;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#projects2 .projboxes .projwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 50%;
+  width: 100%;
+  margin: 30px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#projects2 .projboxes .projwrapper .deets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+  height: 80%;
+  padding: 10px;
+}
+
+#projects2 .projboxes .projwrapper .deets .projtext {
+  height: 50%;
+  width: 80%;
+}
+
+#projects2 .projboxes .projwrapper .deets .projtext i {
+  color: pink;
+}
+
+#projects2 .projboxes .projwrapper .deets .projtext h1 {
+  margin: 20px 0px;
+}
+
+#projects2 .projboxes .projwrapper .deets .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  height: 30%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+}
+
+#projects2 .projboxes .projwrapper .deets .links a {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 10px 19%;
+}
+
+#projects2 .projboxes .projwrapper .deets .links a:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
+          box-shadow: 0 8px 16px 0 rgba(197, 153, 153, 0.247), 0 6px 20px 0 rgba(212, 147, 147, 0.616);
+}
+
+#projects2 .projboxes .projwrapper .vanity {
+  height: 80%;
+  width: 40%;
+  border: 5px solid;
+  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  margin: 20px;
+  background-image: url("/vanity.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#projects2 .projboxes .projwrapper .vanity:hover {
+  background-image: url("https://media.giphy.com/media/J39apWTkTN9FAVgy4C/giphy.gif");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#projects2 .projboxes .projwrapper .closet {
+  height: 80%;
+  width: 40%;
+  border: 5px solid;
+  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  margin: 20px;
+  background-image: url("/closet.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#projects2 .projboxes .projwrapper .closet:hover {
+  background-image: url("https://media.giphy.com/media/YRW7XC7Ao6bfLVMF6H/giphy.gif");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#projects2 .projboxes .projwrapper .eatvite {
+  height: 80%;
+  width: 40%;
+  border: 5px solid;
+  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  margin: 20px;
+  background-image: url("/eatvite2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#projects2 .projboxes .projwrapper .eatvite:hover {
+  background-image: url("https://media.giphy.com/media/j0Aaxfj8jK6dVROK6V/giphy.gif");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#projects2 .projboxes .projwrapper .tinlash {
+  height: 80%;
+  width: 40%;
+  border: 5px solid;
+  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  margin: 20px;
+  background-image: url("/tinlash.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#projects2 .projboxes .projwrapper .tinlash:hover {
+  background-image: url("https://media.giphy.com/media/H3HcQ5z3aw1M1QCUcn/giphy.gif");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #connect {
   height: 90vh;
   width: 100%;
@@ -583,7 +796,7 @@ li a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  border: 3px solid;
+  border: 5px solid;
   -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
      border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
