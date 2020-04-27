@@ -1,0 +1,31 @@
+{
+    "name": "Thinh Hoang",
+    "resume": "assets/resume.docx",
+    "images": {
+        "me": "assets/images/test1.jpeg",
+        "closet": "assets/images/Screen Shot 2020-04-12 at 11.23.48 PM.png",
+        "closet mobile": "assets/images/Screen Shot 2020-04-13 at 8.55.00 AM.png"
+    },
+    "projects":[{
+        "name": "Closet",
+        "live link": "",
+        "github link": "https://github.com/tinnerrss/closet",
+        "summary": "App allowing users to upload photos of items in their closet so they can know what’s clean and readily available and what’s not, taking away that extra hassle of deciding what to wear in the morning.",
+        "skills": "Python | React | Flask | Sequelize"
+    }, {
+        "name": "EatVite",
+        "live link": "https://eatvite.herokuapp.com/",
+        "github link": "https://github.com/tinnerrss/EatVite",
+        "summary": "What’s more frustrating than wanting to go eat with your friends but no one can decide on where to eat? Imagine being able to send an “EatVite” to your friends and never having to wonder where to eat again.",
+        "skills": "Javascript | React | Express | MongoDB | Mongoose "
+    }, {
+        "name": "Vanity",
+        "live link": "https://vanity-express-29.herokuapp.com/",
+        "github link": "https://github.com/tinnerrss/vanity",
+        "summary": "A web app that calls to a makeup API that allows users to search through makeup, save it to their profile, and directs them to the purchasing site when they're ready to buy a product.",
+        "skills": "Javascript | Embedded Javascript (EJS) | Express | Node JS | Postgres SQL"
+    }],
+    "hard skills": "Javascript, Typescript, HTML/CSS (Bootstrap, Materialize), React.js, Node.js, Express, Embedded Javascript (EJS), PostgresSQL/Sequelize, NoSQL, MongoDB/Mongoose, RESTful APIs, Flask, Python",
+    "brand statement": "Full stack developer who is motivated by working in collaborative teams or creative environments. Continually learning and currently mastering in-demand technical skills, including Javascript, React, and Python. My previous career as the owner and operator of a top 3 profit-generating salon in Seattle demonstrates my ability to maintain strong customer relationships while learning efficiently and independently."
+
+}

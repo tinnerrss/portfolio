@@ -1,0 +1,257 @@
+$test: 1px solid black;
+$gold: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+$shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+$mauve: #D4B1B1;
+$darkmauve:  #b18989;
+
+
+@mixin fullPage() {
+    height: 90vh;
+    width: 100%;
+}
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+@mixin fit() {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+li {
+    list-style: none;
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+    a:hover {
+        border-top: 2px solid $mauve;
+    }
+}
+
+
+.app {
+    @include flexCenter(column);
+}
+.nav {
+    @include flexCenter(row);
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    border-bottom: 2px  solid;
+    border-image: $gold;
+    .logo {
+        height: 95%;
+        padding-left: 20px;
+    }
+    .links {
+        width: 50%;
+        @include flexCenter(row);
+        justify-content: space-evenly;
+    }
+}
+
+.landing {
+    @include fullPage();
+    background-image: url("/background.png");
+    background-position: center;
+    background-size: cover;
+}
+#about {
+    @include flexCenter(row);
+    @include fullPage();
+    .me{
+        @include flexCenter(column);
+        justify-content: space-evenly;
+        height: 90%;
+        width: 45%;
+        // border: $test;
+        box-shadow: $shadow;
+        margin: 20px;
+        .mecontent {
+            @include flexCenter(column);
+            justify-content: space-evenly;
+            width: 80%;
+            height: 25%;
+            .head {
+                border-image: $gold;
+                border-bottom: 5px solid;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+                color: $darkmauve;
+            }
+        }
+        .imgbox {
+            @include flexCenter(row);
+            height: 50%;
+            .mepic {
+                object-fit: cover;
+                height: 70%;
+                border: 5px solid transparent;
+                border-image: $gold;
+            }
+        }
+        .icons{
+            @include flexCenter(row);
+            justify-content: space-around;
+            height: 25%;
+            width: 80%;
+            // margin-top: 30px;
+            // border: $test;
+            .contacticons {
+                height: 45px;
+                width: 45px;
+            }
+        }
+        .modal-window {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.7);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+            &:target {
+              visibility: visible;
+              opacity: 1;
+              pointer-events: auto;
+            }
+            &>div {
+                @include flexCenter(column);
+              width: 33%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              padding: 2em;
+              background: #ffffff;
+              .resumepic {
+                  height: 700px;
+                  
+              }
+            }
+           
+          }
+          
+          .modal-close {
+            color: #aaa;
+            line-height: 50px;
+            font-size: 80%;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            width: 70px;
+            text-decoration: none;
+            &:hover {
+              color: black;
+            }
+          }
+    }
+    .skills {
+        @include flexCenter(column);
+        justify-content: space-evenly;
+        height: 100%;
+        width: 50%;
+        .skillboxes {
+            height: 40%;
+            width: 70%;
+            border: 5px solid;
+            border-image: $gold;
+            box-shadow: $shadow;
+            .skillhead {
+                @include flexCenter(column);
+                width: 100%;
+                height: 15%;
+                background-color: $darkmauve;
+                margin: 0px;
+                color: white;
+                box-shadow: $shadow;
+            }
+            .skillList0 {
+                @include flexCenter(row);
+                justify-content: space-evenly;
+                width: 100%;
+                height: 85%;
+                .skillcolumns {
+                    @include flexCenter(column);
+                    height: 100%;
+                    width: 50%;
+                    justify-content: space-evenly;
+                    border: $test;
+                }
+            }
+            .skillList {
+                @include flexCenter(column);
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 85%;
+                
+            }
+        }
+    }
+}
+
+#projects {
+    @include flexCenter(column);
+    @include fullPage();
+    // border: $test;
+    .projboxes {
+        @include flexCenter(row);
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 80%;
+        border: $test;
+        .projectwrapper {
+            // height: 50%;
+            width: 400px;
+            border: 3px solid;
+            border-image: $gold;
+            margin: 20px;
+            .projtext {
+                @include flexCenter(column);
+                height: 250px;
+                width: 400px;
+                position: absolute;
+                z-index: 12;
+                opacity: 0;
+                background-color: rgba(0, 0, 0, 0.541);
+                color: white;
+                // border: $test;
+            }
+            .projtext:hover {
+                    opacity: 1;
+                }
+                .projimg {
+                    @include fit();
+                    object-fit: cover;
+                    z-index: 0;
+                    // position: relative;
+                }
+        }
+    }
+}
+@media screen and (max-width: 1140px) { 
+    
+  }
+  
+  @media screen and (max-width: 600px) { 
+
+  }
