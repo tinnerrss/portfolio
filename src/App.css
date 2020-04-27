@@ -131,7 +131,7 @@ li a:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 90%;
-  width: 45%;
+  width: 50%;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 20px;
@@ -191,6 +191,8 @@ li a:hover {
   border: 5px solid transparent;
   -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
      border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #about .me .icons {
@@ -253,7 +255,7 @@ li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 33%;
+  width: 45%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -265,6 +267,8 @@ li a:hover {
 
 #about .me .modal-window > div .resumepic {
   height: 700px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #about .me .modal-close {
@@ -300,8 +304,11 @@ li a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 100%;
+  height: 90%;
   width: 50%;
+  margin: 20px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #about .skills .skillboxes {
@@ -437,20 +444,13 @@ li a:hover {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100vh;
-  width: 80%;
-  border: 1px solid black;
+  height: 95%;
+  width: 75%;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#projects .projboxes .projectwrapper {
-  width: 400px;
-  border: 3px solid;
-  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
-  margin: 20px;
-}
-
-#projects .projboxes .projectwrapper .projtext {
+#projects .projboxes .projwrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,8 +464,65 @@ li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 250px;
-  width: 400px;
+}
+
+#projects .projboxes .projwrapper .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projects .projboxes .projwrapper .links a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+#projects .projboxes .projwrapper .links a:hover {
+  border-top: 2px solid #D4B1B1;
+}
+
+#projects .projboxes .projwrapper .projectwrapper {
+  height: 370px;
+  width: 600px;
+  border: 3px solid;
+  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  margin: 20px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#projects .projboxes .projwrapper .projectwrapper .projtext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 370px;
+  width: 600px;
   position: absolute;
   z-index: 12;
   opacity: 0;
@@ -473,15 +530,96 @@ li a:hover {
   color: white;
 }
 
-#projects .projboxes .projectwrapper .projtext:hover {
+#projects .projboxes .projwrapper .projectwrapper .projtext:hover {
   opacity: 1;
 }
 
-#projects .projboxes .projectwrapper .projimg {
+#projects .projboxes .projwrapper .projectwrapper .projimg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 0;
+}
+
+#connect {
+  height: 90vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-image: url("/fishcode.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#connect .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 3px solid;
+  -o-border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+     border-image: url("https://wallpaperaccess.com/full/725383.png") 20% stretch;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 50%;
+  width: 40%;
+  margin: 0px 5%;
+}
+
+#connect .card .deetbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
+  width: 60%;
+  height: 20%;
+  background-color: rgba(255, 255, 255, 0.795);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#connect .card .deetbox .icons {
+  height: 80%;
 }
 /*# sourceMappingURL=App.css.map */

@@ -4,6 +4,7 @@ function Projects() {
     return (
         <div id="projects">
                 <div className="projboxes">
+                    <div className="projwrapper">
                         <div className="projectwrapper">
                             <div className="projtext">
                                 <h1>Vanity</h1>
@@ -11,6 +12,12 @@ function Projects() {
                             </div>
                             <img src="/vanity.png" className="projimg"/>
                         </div>
+                        <div className="links">
+                            <a href="https://github.com/tinnerrss/vanity">GITHUB</a><a href="https://vanity-express-29.herokuapp.com/">WEBSITE</a>
+                        </div>
+                        
+                    </div>
+                    <div className="projwrapper">
                         <div className="projectwrapper">
                             <div className="projtext">
                                 <h1>Closet</h1>
@@ -18,8 +25,12 @@ function Projects() {
                             </div>
                             <img src="/closet.png" className="projimg"/>
                         </div>
+                        <div className="links">
+                            <a href="https://github.com/tinnerrss/closet">GITHUB</a>
+                        </div>
+                    </div>
             
-                   
+                    <div className="projwrapper">
                         <div className="projectwrapper">
                             <div className="projtext">
                                 <h1>EatVite</h1>
@@ -27,6 +38,11 @@ function Projects() {
                             </div>
                             <img src="/eatvite2.png" className="projimg"/>
                         </div>
+                        <div className="links">
+                            <a href="https://github.com/tinnerrss/eatvite">GITHUB</a><a href="https://eatvite.herokuapp.com/">WEBSITE</a>
+                        </div>
+                    </div>
+                    <div className="projwrapper">
                         <div className="projectwrapper">
                             <div className="projtext">
                                 <h1>TIN & LASH</h1>
@@ -34,7 +50,10 @@ function Projects() {
                             </div>
                             <img src="/tinlash.png" className="projimg"/>
                         </div>
-                  
+                        <div className="links">
+                            <a href="www.tinlash.com">WEBSITE</a>
+                        </div>
+                    </div>
                 </div>
         </div>
     )

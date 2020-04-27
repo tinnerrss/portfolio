@@ -23,7 +23,6 @@ $darkmauve:  #b18989;
 * {
     margin: 0;
     padding: 0;
-    
 }
 li {
     list-style: none;
@@ -76,7 +75,7 @@ li {
         @include flexCenter(column);
         justify-content: space-evenly;
         height: 90%;
-        width: 45%;
+        width: 50%;
         // border: $test;
         box-shadow: $shadow;
         margin: 20px;
@@ -101,6 +100,7 @@ li {
                 height: 70%;
                 border: 5px solid transparent;
                 border-image: $gold;
+                box-shadow: $shadow;
             }
         }
         .icons{
@@ -134,7 +134,7 @@ li {
             }
             &>div {
                 @include flexCenter(column);
-              width: 33%;
+              width: 45%;
               position: absolute;
               top: 50%;
               left: 50%;
@@ -143,7 +143,7 @@ li {
               background: #ffffff;
               .resumepic {
                   height: 700px;
-                  
+                  box-shadow: $shadow;  
               }
             }
            
@@ -167,8 +167,10 @@ li {
     .skills {
         @include flexCenter(column);
         justify-content: space-evenly;
-        height: 100%;
+        height: 90%;
         width: 50%;
+        margin: 20px;
+        box-shadow: $shadow;
         .skillboxes {
             height: 40%;
             width: 70%;
@@ -212,41 +214,92 @@ li {
 #projects {
     @include flexCenter(column);
     @include fullPage();
-    // border: $test;
+
     .projboxes {
         @include flexCenter(row);
         flex-wrap: wrap;
-        height: 100vh;
-        width: 80%;
-        border: $test;
-        .projectwrapper {
-            // height: 50%;
-            width: 400px;
-            border: 3px solid;
-            border-image: $gold;
-            margin: 20px;
-            .projtext {
-                @include flexCenter(column);
-                height: 250px;
-                width: 400px;
-                position: absolute;
-                z-index: 12;
-                opacity: 0;
-                background-color: rgba(0, 0, 0, 0.541);
-                color: white;
-                // border: $test;
+        height: 95%;
+        width: 75%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        .projwrapper {
+            @include flexCenter(column);
+            .links {
+                @include flexCenter(row);
+                width: 80%;
+                justify-content: space-evenly;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    padding: 10px;
+                }
+                a:hover {
+                    border-top: 2px solid $mauve;
+                }
             }
-            .projtext:hover {
-                    opacity: 1;
+            .projectwrapper {
+                height: 370px;
+                width: 600px;
+                border: 3px solid;
+                border-image: $gold;
+                margin: 20px;
+                box-shadow: $shadow;
+                .projtext {
+                    @include flexCenter(column);
+                    height: 370px;
+                    width: 600px;
+                    position: absolute;
+                    z-index: 12;
+                    opacity: 0;
+                    background-color: rgba(0, 0, 0, 0.541);
+                    color: white;
+                    // border: $test;
                 }
-                .projimg {
-                    @include fit();
-                    object-fit: cover;
-                    z-index: 0;
-                    // position: relative;
-                }
+                .projtext:hover {
+                        opacity: 1;
+                    }
+                    .projimg {
+                        @include fit();
+                        object-fit: cover;
+                        z-index: 0;
+                        // position: relative;
+                    }
+            }
         }
+        
     }
+}
+#connect {
+    @include fullPage();
+    @include flexCenter(row);
+    justify-content: flex-start;
+    background-image: url("/fishcode.png");
+    background-position: center;
+    background-size: cover;
+    .card {
+        @include flexCenter(column);
+        justify-content: space-evenly;
+        border: 3px solid;
+        border-image: $gold;
+        box-shadow: $shadow;
+        height: 50%;
+        width: 40%;
+        margin: 0px 5%;
+        .deetbox {
+            @include flexCenter(row);
+            justify-content: space-between;
+            padding: 0px 20px;
+            width: 60%;
+            height: 20%;
+            background-color: rgba(255, 255, 255, 0.795);
+            border-radius: 5px;
+            box-shadow: $shadow;
+            .icons {
+                height: 80%;
+            }
+        }
+       
+    }
+
 }
 @media screen and (max-width: 1140px) { 
     

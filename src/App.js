@@ -2,7 +2,7 @@ import React from 'react';
 import Landing from './components/Landing';
 import About from './components/About';
 import Projects from './components/Projects';
-import LetsConnect from './components/LetsConnect';
+import Connect from './components/Connect';
 import Nav from './components/Nav'
 import './App.css';
 
@@ -14,6 +14,7 @@ function App() {
         <Landing />
         <About />
         <Projects />
+        <Connect />
     </div>
   );
 }
