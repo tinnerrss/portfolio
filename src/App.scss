@@ -245,8 +245,7 @@ li {
                     }
                     .skills {
                         padding-bottom: 10px;
-                        border-bottom: 2px solid;
-                        border-image: $gold;
+
                         color: $darkmauve
                     }
                     p {
@@ -348,7 +347,7 @@ li {
     }
 
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1100px) {
     .landing {
         background-image: url("/smallpic.png");
     }

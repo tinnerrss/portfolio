@@ -23,8 +23,8 @@ function About() {
                 <div id="open-modal" className="modal-window">
                     <div>
                         <a href="#about" title="Close" className="modal-close">Close</a>
-                        <a href="../assets/Resume.pdf" target="noopener">Click Here For PDF</a>
-                        <img src="/prettyresume.png" className="resumepic"/>
+                        <a href="https://drive.google.com/file/d/1Rbdq_rD6xW9IuIv57AWYra9Xm-lZrvMk/view?usp=sharing" target="_blank" rel="noopener">CLICK FOR PDF</a>
+                        <img src="/resumepic.png" className="resumepic"/>
                     </div>
                 </div>
             </div>
